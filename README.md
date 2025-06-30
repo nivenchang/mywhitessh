@@ -19,26 +19,16 @@
 在您的VPS上，使用 `root` 权限执行以下单行命令即可：
 
 ```bash
-bash <(wget -qO- [https://raw.githubusercontent.com/your-username/your-repo/main/install.sh](https://raw.githubusercontent.com/your-username/your-repo/main/install.sh))
+bash <(wget -qO- https://raw.githubusercontent.com/nivenchang/mywhitessh/refs/heads/main/install.sh)
 ```
 
-> **注意**: 请将上面的 `your-username/your-repo` 替换为您自己的GitHub用户名和仓库名。请参考下面的“重要的首次设置说明”。
+> **注意**: 如果您fork了本脚本，且自行修改的话，请注意将上面的 `install.sh`  对应URL替换为您自己的GitHub名下的实际URL。
 
 安装程序将会引导您完成以下步骤：
 1.  检查 `UFW` 防火墙状态。
 2.  提示您输入白名单来源URL，并展示内容预览供您确认。
 3.  提示您输入SSH端口。
 4.  完成安装并自动执行首次更新。
-
-## ⚠️ 重要的首次设置说明
-
-为了让脚本的“在线升级”功能（菜单选项6）正常工作，您需要手动配置脚本中的 `SELF_URL` 变量。请严格遵循以下顺序：
-
-1.  在GitHub上**创建 `install.sh` 文件并粘贴代码后，先保存（Commit）一次**。
-2.  保存后，进入该文件页面，点击 `Raw` 按钮，**获取到该文件真实的URL**（从浏览器地址栏复制）。
-3.  **再次编辑 `install.sh` 文件**，将您获取到的真实URL，更新到文件顶部的 `SELF_URL` 变量中，然后再次保存（Commit）更改。
-
-这个步骤确保了脚本知道未来应该从哪里下载自己的更新。
 
 ## 🛠️ 如何使用
 
