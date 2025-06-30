@@ -16,7 +16,7 @@ CRON_JOB_FILE="/etc/cron.d/mywhitessh"
 
 # 脚本自身的GitHub Raw URL (请务必修改为你的实际URL)
 # 例如: https://raw.githubusercontent.com/your-username/your-repo/main/install.sh
-SELF_URL="https://raw.githubusercontent.com/your-username/your-repo/main/install.sh"
+SELF_URL="https://raw.githubusercontent.com/nivenchang/mywhitessh/refs/heads/main/install.sh"
 
 
 # --- 颜色定义，让界面更友好 ---
